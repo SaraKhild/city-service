@@ -15,7 +15,9 @@ public class CityClientService {
     private static final String cityUrl = "http://localhost:3030/open-city-api/";
 
     public CityClientService() {
+
         this.webClient = WebClient.builder().baseUrl(cityUrl).build();
+
     }
 
     public Mono<City> getCity(String zipCode) {
@@ -24,7 +26,7 @@ public class CityClientService {
 
     }
 
-    public Flux<City> addCities() {
+    public Flux<City> getAllCities() {
         return webClient.get().uri(cityUrl).retrieve().bodyToFlux(City.class);
 
     }
