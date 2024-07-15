@@ -3,7 +3,7 @@
 <br>
 
 ## Overview
-  In this project, we will see how to integrate the city API to store their information in <strong>Redis</strong> and benefit from it.
+  In this project, we will see how to <strong>integrate the city API</strong> to store their information in <strong>Redis</strong> and benefit from it.
   
  <br>
  
