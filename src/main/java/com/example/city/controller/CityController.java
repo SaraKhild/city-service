@@ -21,23 +21,29 @@ public class CityController {
 
     @Autowired
     public CityController(CityService cityService) {
+
         this.cityService = cityService;
     }
 
-    @PostMapping()
+    @PostMapping
     public Mono<String> addCities() {
-        this.cityService.addCity();
-        return Mono.just("Success");
+
+        return this.cityService.addCity().thenReturn("Success");
+
     }
 
-    @GetMapping()
+    @GetMapping
     public Flux<City> all() {
+
         return this.cityService.getAllCities();
+
     }
 
     @GetMapping("{zipCode}")
     public Mono<City> getCityByZipCode(@PathVariable String zipCode) {
+
         return this.cityService.getCity(zipCode);
+        
     }
 
 }

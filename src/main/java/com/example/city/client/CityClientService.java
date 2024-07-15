@@ -27,6 +27,7 @@ public class CityClientService {
     }
 
     public Flux<City> getAllCities() {
+        
         return webClient.get().uri(cityUrl).retrieve().bodyToFlux(City.class);
 
     }

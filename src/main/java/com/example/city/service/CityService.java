@@ -26,9 +26,9 @@ public class CityService {
 
     }
 
-    public void addCity() {
+    public Mono<Void> addCity() {
 
-         cityClientService.getAllCities()
+        return cityClientService.getAllCities()
                 .collectList()
                 .flatMapMany(Flux::fromIterable)
                 .flatMap(city -> cityMap.fastPut(city.getZip(), city)
@@ -36,8 +36,8 @@ public class CityService {
                             // Log the error and continue
                             System.err.println("Failed to add city: " + e.getMessage());
                             return Mono.empty();
-                        })).subscribe();
-               
+                        }))
+                .then();
 
         // ************************Another Way**************************** */
         // this.cityClientService.getAllCities().collectList().map(l->l.stream().collect(Collectors.toMap(City::getZip,
