@@ -5,7 +5,7 @@
 ## Overview
 <strong>RMapReactive</strong> is a reactive variant of the <strong>Redisson framework's map interface</strong>, providing asynchronous and non-blocking operations for handling key-value pairs in Redis. It offers efficient and scalable methods for storing and retrieving data, making it ideal for real-time applications.
 
-In this project, we will see how to <mark>integrate the city API to store their information in Redis and benefit from it using RMapReactive to ensure efficient and scalable data management.</mark>
+In this project, we will see how to <mark>integrate the city api to store their information in redis and benefit from it using RMapReactive to ensure efficient and scalable data management.</mark>
   
  <br>
  
