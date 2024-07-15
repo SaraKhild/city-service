@@ -60,7 +60,7 @@
 
 ###### Output :star_struck:
 
-##### :pencil2: `As you can see first photo, the time of fetch city information by zip code take some whole UNLIKE second photo take 7 millie second.` 
+##### :pencil2: `As you can see first photo, the time of fetch city information by zip code take some whole UNLIKE second photo take 7 millie second when it come from redis.` 
 <img width="1333" alt="Screenshot 1446-01-09 at 11 10 44 AM" src="https://github.com/user-attachments/assets/fb4a9646-9962-4c2a-a435-373d8a0f7c47">
 
 <img width="1333" alt="Screenshot 1446-01-09 at 11 11 46 AM" src="https://github.com/user-attachments/assets/af924b38-2e2d-4cdd-882e-765279da1305">
